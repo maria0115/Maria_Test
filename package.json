@@ -4,17 +4,30 @@
   "description": "reactnode",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "backend":"nodemon index.js",
+    "start": "node index.js && set NODE_ENV=development",
+    "backend": "nodemon index.js && set NODE_ENV=development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "maria",
   "license": "ISC",
   "dependencies": {
+    "@elastic/elasticsearch": "^7.10.0",
     "body-parser": "^1.19.0",
+    "es6": "npm:@elastic/elasticsearch@^6.8.8",
+    "es7": "npm:@elastic/elasticsearch@^7.10.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maria0115/Maria_Test.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maria0115/Maria_Test/issues"
+  },
+  "homepage": "https://github.com/maria0115/Maria_Test#readme"
 }
